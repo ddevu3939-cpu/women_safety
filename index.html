@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Women Safety Shield</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>🚨 Women Safety Shield</h1>
+
+<div class="container">
+
+    <h3>Add Emergency Contact</h3>
+    <input type="text" id="name" placeholder="Contact Name">
+    <input type="text" id="number" placeholder="Phone Number">
+    <button onclick="addContact()">Save Contact</button>
+
+    <h3>Select Emergency Contact</h3>
+    <select id="contactList"></select>
+
+    <br>
+
+    <button class="sos" onclick="activateSOS()">🚨 SOS</button>
+    <button class="police" onclick="callPolice()">📞 Police (112)</button>
+    <button class="cyber" onclick="callCyber()">💻 Cyber Cell (1930)</button>
+    <button class="location" onclick="getLocation()">📍 Get Live Location</button>
+
+    <p id="status"></p>
+
+    <hr>
+
+    <h3>🤖 AI Safety Travel Assistant</h3>
+    <div id="chatBox"></div>
+    <input type="text" id="userInput" placeholder="Ask about safety...">
+    <button class="ai" onclick="aiAssistant()">Ask</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
